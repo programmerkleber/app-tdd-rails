@@ -33,6 +33,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.1' # faz os teste
   gem 'factory_bot_rails', '~> 6.1' # criar objects de forma ágil
   gem 'database_cleaner-active_record', '~> 1.8' # manter o db de testes sempre limpo
+  gem 'rails-controller-testing' # acessa os templates dos controllers
 end
 
 group :development do
