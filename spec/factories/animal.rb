@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :animal do
     name { 'Animal X' }
-    category_animal { 'mamifero' }
+    type_animal { 'mamifero' }
   end
 end

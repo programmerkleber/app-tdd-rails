@@ -6,13 +6,13 @@ RSpec.describe Animal, type: :model do
     # exemple 1 (um cenário que você quer testar)
     # "ele(a) é valido"
     it 'é válido' do
-      animal = Animal.new name: 'Vaca', category_animal: 'mamifero'
+      animal = Animal.new name: 'Vaca', type_animal: 'mamifero'
       expect(animal).to be_valid
     end
 
     # exemple 1
     it 'não é valido' do
-      animal = Animal.new category_animal: 'mamifero'
+      animal = Animal.new type_animal: 'mamifero'
       expect(animal).to_not be_valid
     end
 
@@ -27,7 +27,7 @@ RSpec.describe Animal, type: :model do
     end
   end
 
-  context 'Validar category_animal' do
+  context 'Validar type_animal' do
     # exemple 1
     it 'ser válido' do
       # um cenário
@@ -37,7 +37,7 @@ RSpec.describe Animal, type: :model do
       #   2. [processar] o que está testando
       #   3. [validar] o teste
 
-      animal = Animal.new name: 'Cachorro', category_animal: 'mamifero'
+      animal = Animal.new name: 'Cachorro', type_animal: 'mamifero'
       expect(animal).to be_valid
     end
 
